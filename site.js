@@ -9,7 +9,7 @@ if (menuButton && menu) {
     menu.setAttribute("data-open", String(!isOpen));
     menu.classList.toggle("hidden", isOpen);
     menuButton.setAttribute("aria-expanded", String(!isOpen));
-    menuButton.textContent = isOpen ? "Menu" : "Close";
+    menuButton.setAttribute("aria-label", isOpen ? "Open menu" : "Close menu");
   });
 }
 
