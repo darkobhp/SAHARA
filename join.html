@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join Study | SAHARA Study</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 border-b border-[#d8d0c8]/70 bg-[#faf5ee]/95 shadow-[0_2px_16px_rgba(58,48,42,0.04)] backdrop-blur-xl">
+      <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="min-w-0">
+          <span class="block font-headline text-2xl font-bold leading-none tracking-tight text-[#c2652a]">SAHARA</span>
+          <span class="mt-1 block max-w-[16rem] truncate text-[9px] font-semibold uppercase tracking-[0.18em] text-[#605850] sm:max-w-none">
+            <span class="text-[#c2652a]">S</span>urvival <span class="text-[#c2652a]">A</span>nalysis of <span class="text-[#c2652a]">H</span>igh-grade gliom<span class="text-[#c2652a]">A</span> ac<span class="text-[#c2652a]">R</span>oss <span class="text-[#c2652a]">A</span>frica
+          </span>
+        </a>
+        <div class="hidden items-center gap-8 md:flex">
+          <a class="nav-link" href="index.html">About</a>
+          <a class="nav-link" href="participating-sites.html">Participating Sites</a>
+          <a class="nav-link" href="study-documents.html">Study Documents</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <a class="btn btn-primary hidden sm:inline-flex" href="join.html">Join Study</a>
+          <button class="btn btn-outline px-4 md:hidden" data-menu-button aria-expanded="false">Menu</button>
+        </div>
+      </nav>
+      <div class="hidden border-t border-[#d8d0c8]/70 px-5 py-4 md:hidden" data-mobile-menu data-open="false">
+        <div class="grid gap-2">
+          <a class="rounded-lg px-3 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#605850] hover:bg-[#f2ece4]" href="index.html">About</a>
+          <a class="rounded-lg px-3 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#605850] hover:bg-[#f2ece4]" href="participating-sites.html">Participating Sites</a>
+          <a class="rounded-lg px-3 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#605850] hover:bg-[#f2ece4]" href="study-documents.html">Study Documents</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+        <div class="mx-auto max-w-3xl text-center" data-reveal>
+          <h1 class="font-headline text-5xl leading-tight md:text-7xl">SAHARA Site Eligibility</h1>
+          <p class="mt-5 text-lg leading-8 text-[#605850]">Please complete all required fields to express interest in joining the SAHARA collaboration.</p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-4xl px-5 pb-24 sm:px-8">
+        <form
+          class="rounded-2xl border border-[#d8d0c8]/70 bg-white p-6 shadow-[0_24px_70px_-24px_rgba(58,48,42,0.22)] sm:p-8 md:p-10"
+          action="https://script.google.com/macros/s/AKfycbwV40SUa0WjNzs_PpWn3mjRQyF6deIdotrko3n1sHNUbmeWl2hFl4RUP6YfISyuZFhh/exec"
+          method="post"
+          data-sahara-form
+          data-reveal
+        >
+          <div class="mb-8 hidden rounded-xl border border-[#c0392b]/25 bg-[#fce4e0] px-5 py-4 text-sm leading-6 text-[#7a1a10]" data-form-warning>
+            This form is ready, but it needs your deployed Google Apps Script Web App URL before submissions can be saved.
+          </div>
+          <div class="mb-8 hidden rounded-xl border border-[#c2652a]/25 bg-[#fbe8d8] px-5 py-4 text-sm font-bold leading-6 text-[#401a08]" data-form-success>
+            Thank you. Your SAHARA site eligibility form has been submitted.
+          </div>
+
+          <input type="hidden" name="form_name" value="SAHARA Site Eligibility" />
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">Email</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="email" name="email" required />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">Hospital Name</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="text" name="hospital_name" required />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">Country</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="text" name="country" required />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">City</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="text" name="city" required />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">Principal Investigator (PI)</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="text" name="principal_investigator" required />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-extrabold uppercase tracking-[0.12em] text-[#3a302a]">PI Contact Information (Email)</span>
+              <input class="rounded-lg border-[#d8d0c8] bg-[#faf5ee] px-4 py-3 focus:border-[#c2652a] focus:ring-[#c2652a]" type="email" name="pi_email" required />
+            </label>
+          </div>
+
+          <div class="mt-10 space-y-8">
+            <fieldset class="form-question">
+              <legend>1. Does your hospital have a neurosurgical service that manages patients with high-grade gliomas?</legend>
+              <div class="form-options"><label><input type="radio" name="neurosurgical_service" value="Yes" required /> Yes</label><label><input type="radio" name="neurosurgical_service" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>2. Do you have access to the necessary diagnostic and treatment tools for high-grade glioma management?</legend>
+              <div class="form-options"><label><input type="radio" name="diagnostic_treatment_tools" value="Yes" required /> Yes</label><label><input type="radio" name="diagnostic_treatment_tools" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>4. Do you have a dedicated team for data collection and management?</legend>
+              <div class="form-options"><label><input type="radio" name="dedicated_data_team" value="Yes" required /> Yes</label><label><input type="radio" name="dedicated_data_team" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>5. Does your site have the infrastructure to manage data electronically?</legend>
+              <div class="form-options"><label><input type="radio" name="electronic_data_infrastructure" value="Yes" required /> Yes</label><label><input type="radio" name="electronic_data_infrastructure" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>6. How does your site record patient information?</legend>
+              <div class="form-options stacked">
+                <label><input type="radio" name="patient_information_recording" value="Electronically" required /> Electronically</label>
+                <label><input type="radio" name="patient_information_recording" value="Paper-based" required /> Paper-based</label>
+                <label><input type="radio" name="patient_information_recording" value="Mixed" required /> Mixed</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>7. If paper-based or mixed, does your site have capacity to digitize or manually extract data for research purposes?</legend>
+              <div class="form-options"><label><input type="radio" name="digitization_capacity" value="Yes" required /> Yes</label><label><input type="radio" name="digitization_capacity" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>8. Does your site have access to patient records for high-grade glioma cases from the past?</legend>
+              <div class="form-options"><label><input type="radio" name="retrospective_records_access" value="Yes" required /> Yes</label><label><input type="radio" name="retrospective_records_access" value="No" required /> No</label></div>
+            </fieldset>
+
+            <fieldset class="form-question">
+              <legend>9. Does your site have sufficient staff and resources to collect retrospective data?</legend>
+              <div class="form-options"><label><input type="radio" name="retrospective_staff_resources" value="Yes" required /> Yes</label><label><input type="radio" name="retrospective_staff_resources" value="No" required /> No</label></div>
+            </fieldset>
+          </div>
+
+          <div class="mt-10 flex flex-col gap-3 border-t border-[#d8d0c8]/70 pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <p class="text-sm leading-6 text-[#605850]">All fields are required before submission.</p>
+            <button class="btn btn-primary" type="submit">Submit Application</button>
+          </div>
+          <div class="mt-6 hidden rounded-xl border border-[#c2652a]/25 bg-[#fbe8d8] px-5 py-4 text-center text-sm font-bold leading-6 text-[#401a08]" data-form-success-bottom>
+            Application received. Thank you for your interest in joining the SAHARA Study.
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-[#d8d0c8]/70 bg-[#faf5ee]">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 py-10 text-center sm:px-8 md:flex-row md:text-left">
+        <a class="font-headline text-xl font-bold uppercase tracking-[0.12em] text-[#c2652a]" href="index.html">SAHARA</a>
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-xs font-bold uppercase tracking-[0.16em]">
+          <a class="text-stone-500 transition-colors hover:text-[#c2652a]" href="#">Privacy Policy</a>
+          <a class="text-stone-500 transition-colors hover:text-[#c2652a]" href="#">Terms of Service</a>
+          <a class="text-stone-500 transition-colors hover:text-[#c2652a]" href="mailto:docs@sahara-study.org">Contact Us</a>
+        </div>
+        <p class="text-xs uppercase tracking-[0.16em] text-stone-500">© 2026 SAHARA Study</p>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@300..800&display=swap");
+
+:root {
+  --background: #faf5ee;
+  --surface: #faf5ee;
+  --surface-lowest: #ffffff;
+  --surface-low: #f6f0e8;
+  --surface-container: #f2ece4;
+  --surface-high: #ece6dc;
+  --surface-highest: #e6e0d6;
+  --primary: #c2652a;
+  --primary-dark: #a95423;
+  --primary-fixed: #fbe8d8;
+  --secondary: #78706a;
+  --tertiary: #8c3c3c;
+  --tertiary-fixed: #fce0e0;
+  --inverse: #3a302a;
+  --outline: #d8d0c8;
+  --text: #3a302a;
+  --muted: #605850;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--text);
+  font-family: Manrope, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-headline {
+  font-family: "EB Garamond", serif;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-link {
+  border-bottom: 1px solid transparent;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn {
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 0.5rem;
+  justify-content: center;
+  letter-spacing: 0.12em;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  border: 1px solid var(--outline);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  background: rgba(251, 232, 216, 0.7);
+  border-color: rgba(194, 101, 42, 0.45);
+}
+
+.btn-inverse {
+  background: #faf5ee;
+  color: var(--inverse);
+}
+
+.card {
+  background: var(--surface-low);
+  border: 1px solid rgba(216, 208, 200, 0.7);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 16px rgba(58, 48, 42, 0.04);
+}
+
+.form-question {
+  border-top: 1px solid rgba(216, 208, 200, 0.75);
+  padding-top: 1.75rem;
+}
+
+.form-question legend {
+  color: var(--text);
+  font-family: "EB Garamond", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.form-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.form-options.stacked {
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.form-options label {
+  align-items: center;
+  background: var(--surface-low);
+  border: 1px solid rgba(216, 208, 200, 0.85);
+  border-radius: 0.75rem;
+  color: var(--muted);
+  display: inline-flex;
+  font-weight: 700;
+  gap: 0.65rem;
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.form-options label:hover {
+  background: var(--primary-fixed);
+  border-color: rgba(194, 101, 42, 0.35);
+  color: var(--text);
+}
+
+.premium-shadow {
+  box-shadow: 0 24px 70px -24px rgba(58, 48, 42, 0.22);
+}
+
+.map-grid {
+  background-image: radial-gradient(circle at 2px 2px, rgba(194, 101, 42, 0.28) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.video-lines {
+  background-image:
+    linear-gradient(90deg, rgba(194, 101, 42, 0.18) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(58, 48, 42, 0.09) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+html.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 640ms ease, transform 640ms ease;
+}
+
+html.reveal-ready [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html.reveal-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

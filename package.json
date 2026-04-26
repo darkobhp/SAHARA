@@ -1,0 +1,9 @@
+{
+  "name": "sahara-study-website",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "python3 -m http.server 3001",
+    "start": "python3 -m http.server 3001"
+  }
+}
